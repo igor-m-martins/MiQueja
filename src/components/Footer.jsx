@@ -6,8 +6,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Copyright and credits */}
-        <div className="text-center md:text-left text-sm tracking-wide">
-          © 2025 <span className="font-bold text-gray-800">MiQueja</span>. 
+        <div className="text-center md:text-left text-sm tracking-wide"> 
           Un proyecto desarrollado por{" "}
           <a 
             href="https://igor-m-martins.github.io/" 
@@ -17,6 +16,8 @@ function Footer() {
           >
             Igor Martins
           </a>
+          <br/>
+          © 2025 MiQueja
         </div>
 
         {/* Secondary navigation links */}
