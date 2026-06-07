@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { buildUrl } from "../utils/api";
+import { truncateText } from "../utils/helpers";
 
 export default function UserProfile() {
   const { user } = useAuth();
@@ -193,7 +194,7 @@ export default function UserProfile() {
                     >
                       {complaint.title}
                     </Link>
-                    <p className="text-gray-600 mt-2">{complaint.description}</p>
+                    <p className="text-gray-600 mt-2">{truncateText(complaint.description, 180)}</p>
                     <p className="text-sm text-gray-500 mt-2">
                       Empresa:{" "}
                       <Link
