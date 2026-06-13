@@ -132,7 +132,7 @@ export default function Home() {
             {featuredAds.length > 0 && (
               <div>
                 <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                  <span className="text-yellow-500">⭐</span> Destacados
+                  <span className="text-yellow-500">⭐</span>Anunciantes destacados
                 </h3>
                 <div className="space-y-3">
                   {featuredAds.map((advertiser) => (
